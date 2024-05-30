@@ -1,7 +1,7 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
-const Grid = () => {
+const Grid = ({ opt }: { opt: string | null }) => {
   return (
     <section id="about">
       <BentoGrid className="w-full py-20">
@@ -18,6 +18,7 @@ const Grid = () => {
             imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}
             spareImg={item.spareImg}
+            opt={opt}
           />
         ))}
       </BentoGrid>

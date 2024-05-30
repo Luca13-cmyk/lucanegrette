@@ -10,7 +10,6 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundBeams } from "./BackgroundBeams";
-import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 // 54:52
@@ -43,6 +42,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  opt,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -54,10 +54,10 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  opt: string | null;
 }) => {
   const [copied, setCopied] = useState(false);
-  const params = useSearchParams();
-  const opt = params.get("opt");
+
   const defaultOptions = {
     loop: copied, // Only loop when copied
     autoplay: copied,
