@@ -43,10 +43,10 @@ const Projects = () => {
                 </div>
 
                 <div className="flex justify-center items-center border border-purple p-4 rounded-lg">
-                  <p className="flex lg:text-xs md:text-xs text-sm text-purple">
+                  <p className="hidden md:flex lg:text-xs md:text-xs text-sm text-purple">
                     Ir Para o Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="md:ms-3" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>

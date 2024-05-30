@@ -3,6 +3,7 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image";
+import { BackgroundBeams } from "./ui/BackgroundBeams";
 
 const Hero = () => {
   return (

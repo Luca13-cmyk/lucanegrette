@@ -9,6 +9,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { BackgroundBeams } from "./BackgroundBeams";
 
 // 54:52
 
@@ -136,7 +137,12 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && (
+            <>
+              <BackgroundBeams />
+              <GlobeDemo />
+            </>
+          )}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">

@@ -10,16 +10,49 @@ export const contact_email = "ln-solutions@outlook.com";
 
 export const approachs = [
   {
-    title: "Planning & Strategy",
-    des: "We'll collaborate to map out your website's goals, target audience,  and key functionalities. We'll discuss things like site structure,  navigation, and content requirements.",
+    title: "Planejamento & Estratégia",
+    des: "Vamos juntos definir os objetivos, público-alvo e as principais funções do seu site. Também vamos conversar sobre como organizar as páginas, facilitar a navegação e o que precisa ter no conteúdo.",
   },
   {
-    title: "Development & Progress Update",
-    des: "Once we agree on the plan, I cue my lofi playlist and dive into    coding. From initial sketches to polished code, I keep you updated every step of the way.",
+    title: "Desenvolvimento",
+    des: "Combinado o plano, começo a programar ouvindo minha playlist. Do rascunho inicial ao código final, mantenho você informado em todas as etapas.",
   },
   {
-    title: "Development & Launch",
-    des: "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.",
+    title: "Lançamento",
+    des: "A magia ganha vida! ✨ Com o design aprovado, transformo ideias em um site funcional e pronto para encantar.",
+  },
+];
+
+export const dockLinks = [
+  {
+    id: 1,
+    image: "/ln-note-logo.png",
+    href: "https://ln-note.vercel.app/",
+    name: "ln-note",
+  },
+  {
+    id: 2,
+    image: "/ln-imaginify-logo.png",
+    href: "https://ln-imaginify.vercel.app/",
+    name: "ln-imaginify",
+  },
+  {
+    id: 3,
+    image: "/ln-drive-logo.png",
+    href: "https://ln-drive.vercel.app/",
+    name: "ln-drive",
+  },
+  {
+    id: 4,
+    image: "/ln-draw-logo.png",
+    href: "https://ln-draw.vercel.app/",
+    name: "ln-draw",
+  },
+  {
+    id: 5,
+    image: "/ln-yt-videos-logo.png",
+    href: "https://drive.google.com/file/d/12HJt7DveXR3tI8qByxUHme87y1W0g-qS/view?usp=sharing",
+    name: "ln-ytvideos",
   },
 ];
 
@@ -39,7 +72,8 @@ export const skills = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "Colaboração com o cliente é fundamental para mim, por isso, priorizo a comunicação aberta",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "w-full h-full",
@@ -49,10 +83,10 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Sempre disponível, independente da localização",
     description: "",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    className: "",
+    className: "lg:col-span-1 md:col-span-2 md:row-span-2",
 
     imgClassName: "",
     titleClassName: "justify-start",
@@ -61,10 +95,10 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Tech Stack",
+    description: "Sempre melhorando minha",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    className: "",
+    className: "lg:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -72,10 +106,10 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Entusiasta de tecnologia com paixão por desenvolvimento",
     description: "",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    className: "",
+    className: "lg:col-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
@@ -84,18 +118,19 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title:
+      "Códigos com tecnologias de última geração. Com IA integrada para automação.",
+    description: "Detalhes exclusivos",
     // className: "md:col-span-3 md:row-span-2",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-1 md:col-span-3 md:row-span-1 lg:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName: "justify-center md:justify-start lg:justify-start",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Vamos começar um projeto juntos?",
     description: "",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     className: "md:col-span-3",
@@ -120,7 +155,7 @@ export const projects = [
       "/Convex.jpg",
       "google-gemini-icon.webp",
     ],
-    link: "/ui.earth.com",
+    link: "https://ln-note.vercel.app/",
   },
   {
     id: 2,
@@ -128,7 +163,7 @@ export const projects = [
     des: "A maneira mais fácil de enviar e compartilhar arquivos com a sua empresa. Crie uma conta e comece a gerenciar seus arquivos em menos de um minuto.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/Convex.jpg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://ln-drive.vercel.app/",
   },
   {
     id: 3,
@@ -136,7 +171,7 @@ export const projects = [
     des: "Um aplicativo SaaS REAL com recursos de IA e um sistema de pagamentos e créditos utilizando tecnologias mais recente.",
     img: "/p3.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/cloud.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://ln-imaginify.vercel.app/",
   },
   {
     id: 4,
@@ -144,7 +179,7 @@ export const projects = [
     des: "Organize ideias, tarefas e projetos de forma visual com seus amigos. Adicione notas, imagens e use ferramentas de desenho para deixar seus quadros dinâmicos e fáceis de entender.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/Convex.jpg", "/c.svg"],
-    link: "/ui.apple.com",
+    link: "https://ln-draw.vercel.app/",
   },
 ];
 
@@ -165,24 +200,17 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    logo: "next.svg",
+      "Um container Docker é um pacote leve e autossuficiente que inclui tudo o que é necessário para executar um aplicativo: código, runtime, bibliotecas, sistema de arquivos e configurações. Isso significa que os containers podem ser executados em qualquer ambiente, independentemente do sistema operacional ou da infraestrutura subjacente.",
+    name: "Docker",
+    title: "Container",
+    logo: "dock.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    logo: "next.svg",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    logo: "next.svg",
+      "O Clerk Auth é uma plataforma de autenticação e gerenciamento de usuários que ajuda as empresas a gerenciar seus usuários, login e autorização. Ele fornece um conjunto abrangente de recursos para criar uma experiência de autenticação segura e amigável ao usuário.",
+    name: "Clerk",
+    title: "Autenticação e Gerenciamento",
+    logo: "c.svg",
   },
 ];
 
@@ -222,29 +250,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend",
+    desc: "O Desenvolvedor Frontend é responsável por criar a interface do usuário (IU) e a experiência do usuário (UX) de um website ou aplicativo.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Mobile Development",
+    desc: "O desenvolvimento mobile se tornou uma área crucial no cenário tecnológico atual, impulsionado pelo uso crescente de smartphones e tablets. É a arte de criar aplicativos para dispositivos móveis, proporcionando experiências imersivas e interativas aos usuários.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Machine learning",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Machine Learning",
+    desc: "O aprendizado de máquina, um subcampo da inteligência artificial, capacita máquinas a executarem tarefas exclusivas do ser humano, como categorizar imagens, analisar dados e prever variações de preço.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Backend",
+    desc: "O Desenvolvedor Backend atua nos bastidores, garantindo a comunicação entre usuários e servidores. Ele cria a lógica por trás do site/software, desenvolve e mantém o banco de dados central, e assegura respostas rápidas e performance otimizada para as requisições vindas do frontend.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

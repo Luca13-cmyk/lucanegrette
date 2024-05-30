@@ -8,7 +8,24 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Luca Negrette",
   description:
-    "Possuo uma paixão inata por aprendizado e inovação, sempre em busca de soluções alternativas e aprimoramento contínuo",
+    "Apaixonado por tecnologia e desenvolvimento, com foco na criação de sistemas eficientes e intuitivos",
+  generator: "Next.js",
+  manifest: "/manifest.json",
+  keywords: ["ln", "lucanegrette", "Luca Negrette"],
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/L_2L.png",
+        href: "/L_2L.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/L_2L.png",
+        href: "/L_2L.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
