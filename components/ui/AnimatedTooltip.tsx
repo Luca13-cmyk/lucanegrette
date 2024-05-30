@@ -41,7 +41,7 @@ export const AnimatedTooltip = ({
   return (
     <>
       {items.map((item, idx) => (
-        <a href={item.href} target="_blank">
+        <a key={item.id} href={item.href} target="_blank">
           <div
             className="relative group"
             key={item.name}
