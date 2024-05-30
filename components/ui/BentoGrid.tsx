@@ -10,6 +10,8 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundBeams } from "./BackgroundBeams";
+import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 // 54:52
 
@@ -54,6 +56,8 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const params = useSearchParams();
+  const opt = params.get("opt");
   const defaultOptions = {
     loop: copied, // Only loop when copied
     autoplay: copied,
@@ -137,12 +141,23 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && (
+          {opt && id == 2 && (
+            <>
+              <Image
+                src="/Globe.png"
+                alt="Globe"
+                fill
+                className="w-full h-full object-cover object-center"
+              />
+            </>
+          )}
+          {!opt && id == 2 && (
             <>
               <BackgroundBeams />
               <GlobeDemo />
             </>
           )}
+
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
