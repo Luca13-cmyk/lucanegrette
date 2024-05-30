@@ -13,7 +13,7 @@ export default function Error() {
         site. <br /> Tente uma{" "}
         <span className="text-purple text-pretty">versão mais simples</span>{" "}
       </p>
-      <a href={`${origin}/opt=true`} className="">
+      <a href={`${origin}/?opt=true`} className="">
         <MagicButton icon={<IoReload />} title="Aqui" position="right" />
       </a>
     </div>
