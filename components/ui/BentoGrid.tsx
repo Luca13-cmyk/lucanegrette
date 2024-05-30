@@ -144,7 +144,7 @@ export const BentoGridItem = ({
           {opt && id == 2 && (
             <>
               <Image
-                src="/Globe.png"
+                src="Globe.png"
                 alt="Globe"
                 fill
                 className="w-full h-full object-cover object-center"
