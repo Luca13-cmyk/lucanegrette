@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   generator: "Next.js",
   manifest: "/manifest.json",
   keywords: ["ln", "lucanegrette", "Luca Negrette"],
-  themeColor: [{ media: "(prefers-color-schema: dark)", color: "#000000" }],
+  themeColor: "#000000",
   icons: {
     icon: [
       {
